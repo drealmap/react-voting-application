@@ -10,36 +10,30 @@ function App() {
   const [catCount, setCatcount] = useState(0);
   const [dogCount, setDogcount] = useState(0);
 
-  
-
   const totalCount = catCount + dogCount;
-  const catPercent = ((catCount/totalCount) * 100).toFixed(1)
-  const dogPercent = ((dogCount/totalCount) * 100).toFixed(1)
-
 
 
   return (
     <div className="App">
       <div className='flex_container'>
-        <div className='cat' style={{width: catPercent + '%'}}></div>
-        <div className='dog' style={{width: dogPercent + '%'}}></div>
+        <div className='cat'></div>
+        <div className='dog'></div>
       </div>
 
       <div className='buttons'>
         <div className='cat_button' onClick={() => setCatcount(catCount + 1)} >
           <h2>CATS</h2>
-          <h2>{catPercent}%</h2>
+          <h2></h2>
         </div>
         <div className='liner'></div>
         <div className='dog_button' onClick={() => setDogcount(dogCount + 1)}>
           <h2>DOGS</h2>
-          <h2>{dogPercent}%</h2>
         </div>
       </div>
 
-      <h1>{totalCount}votes</h1>
+      <h1>votes</h1>
+      {console.log(catCount)}
     </div>
-
   );
 }
 

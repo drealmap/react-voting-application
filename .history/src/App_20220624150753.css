@@ -15,42 +15,29 @@ h1{
 }
 
 .cat{
-  background-color: skyblue;
+  background-color: lightblue;
   height: 100vh;
 }
 
 .dog{
-  background-color: lightseagreen;
+  background-color: lightgreen;
   height: 100vh;
 }
 
 .buttons{
   display: flex;
   background-color: white;
-  width: 30%;
+  width: 20%;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 40%;
+  left: 40%;
   height: 30%;
 }
 
 .liner{
-  width: 2px;
+  width: 5px;
   background-color: grey;
-  height: 70%;
-  margin: 0 20px;
-}
-
-.cat_button h2{
-  color: skyblue;
-}
-
-.dog_button h2{
-  color: lightseagreen;
-}
-
-h1{
-  color: lightgray;
+  height: 30%;
 }

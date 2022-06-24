@@ -10,12 +10,15 @@ function App() {
   const [catCount, setCatcount] = useState(0);
   const [dogCount, setDogcount] = useState(0);
 
-  
+  const [catPercent, setCatPercent] = useState(0);
+  const [dogPercent, setDogpercent] = useState(0)
 
   const totalCount = catCount + dogCount;
-  const catPercent = ((catCount/totalCount) * 100).toFixed(1)
-  const dogPercent = ((dogCount/totalCount) * 100).toFixed(1)
 
+  if (catPercent > 0){
+  setCatPercent((catCount/totalCount) * 100).toFixed(2)
+  }
+   
 
 
   return (
@@ -38,8 +41,8 @@ function App() {
       </div>
 
       <h1>{totalCount}votes</h1>
+      {console.log(catCount)}
     </div>
-
   );
 }
 

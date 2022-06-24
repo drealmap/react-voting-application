@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+
+.flex_container{
+  display: flex;
+}
+
+
+h1{
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}

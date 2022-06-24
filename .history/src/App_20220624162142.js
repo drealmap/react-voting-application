@@ -13,9 +13,8 @@ function App() {
   
 
   const totalCount = catCount + dogCount;
-  const catPercent = ((catCount/totalCount) * 100).toFixed(1)
-  const dogPercent = ((dogCount/totalCount) * 100).toFixed(1)
-
+  const catPercent = ((catCount/totalCount) * 100).toFixed(2)
+  const dogPercent = ((dogCount/totalCount) * 100).toFixed(2)
 
 
   return (
@@ -38,8 +37,8 @@ function App() {
       </div>
 
       <h1>{totalCount}votes</h1>
+      {console.log(catCount)}
     </div>
-
   );
 }
 

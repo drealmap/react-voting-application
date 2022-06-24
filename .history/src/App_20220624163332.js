@@ -38,6 +38,7 @@ function App() {
       </div>
 
       <h1>{totalCount}votes</h1>
+      {console.log(catCount)}
     </div>
 
   );
