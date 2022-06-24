@@ -13,8 +13,20 @@ function App() {
   
 
   const totalCount = catCount + dogCount;
-  const catPercent = ((catCount/totalCount) * 100).toFixed(1)
-  const dogPercent = ((dogCount/totalCount) * 100).toFixed(1)
+  
+
+  let catPercent;
+  let dogPercent;
+
+  if (totalCount === 0) {
+    catPercent = 0;
+    dogPercent = 0;
+  } else{
+    catPercent = ((catCount/totalCount) * 100).toFixed(1) 
+    dogPercent = ((dogCount/totalCount) * 100).toFixed(1) 
+  }
+  
+  
 
 
 
@@ -28,7 +40,8 @@ function App() {
       <div className='buttons'>
         <div className='cat_button' onClick={() => setCatcount(catCount + 1)} >
           <h2>CATS</h2>
-          <h2>{catPercent}%</h2>
+          
+        <h2>{catPercent}%</h2> 
         </div>
         <div className='liner'></div>
         <div className='dog_button' onClick={() => setDogcount(dogCount + 1)}>
@@ -37,7 +50,7 @@ function App() {
         </div>
       </div>
 
-      <h1>{totalCount}votes</h1>
+      <h1>{totalCount} votes</h1>
     </div>
 
   );
