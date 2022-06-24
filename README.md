@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [#/](https://map-advice-generator.netlify.app/)
+- Live Site URL: [https://map-voting-app.netlify.app/](https://map-voting-app.netlify.app/)
 
 
 
